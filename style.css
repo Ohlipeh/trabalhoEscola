@@ -1,99 +1,102 @@
 @charset "UTF-8";
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
     min-height: 100vh;
     background-color: bisque;
     font-family: Arial, sans-serif;
- }
+}
 
- header {
+header {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 30px 20px 50px;
 }
+
 header > h1 {
-    padding-top: 30px;
     font-variant: small-caps;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 5vw;
+    font-size: clamp(28px, 5vw, 60px);
 }
+
 header > p {
-    padding-bottom: 50px;
+    font-size: clamp(16px, 2.5vw, 28px);
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding: 10vh 30px;
     line-height: 2em;
-    padding-left: 30px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 3vw;
+    font-size: clamp(16px, 3vw, 32px);
 }
 
 section#intro {
     background-color: white;
-    color:black;
+    color: black;
 }
 
 section.imagem {
-    background-color: rgb(58, 58, 58);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.518);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    }
-
+    padding: 10vh 30px;
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 section#img1 {
     background-image: url("https://todoconceptos.com/wp-content/uploads/2021/07/Vertebrados-destacada-1.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-   
+    background-attachment: fixed;
 }
 
 section#img2 {
     background-image: url("https://images.pexels.com/photos/9365/sea-nature-art-animals.jpg?cs=srgb&dl=pexels-skitterphoto-9365.jpg&fm=jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-} 
+    background-attachment: fixed;
+}
 
 section#img3 {
     background-image: url("https://concepto.de/wp-content/uploads/2019/03/anfibios-item-2.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    
+    background-attachment: fixed;
 }
+
 section#img4 {
     background-image: url("https://www.todoestudo.com.br/wp-content/uploads/2019/04/repteis-03-768x473.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 section#img5 {
     background-image: url("https://th.bing.com/th/id/R.4ec6757152e69bc84850268e8b791e54?rik=V%2b0XCLItIv%2fhpw&pid=ImgRaw&r=0");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 section#img6 {
     background-image: url("https://www.infoescola.com/wp-content/uploads/2017/02/mamiferos-429119983.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    display: inline-block;
-    padding: 6px;
+    display: block;
+    width: 100vw;
+    padding: 10px 0;
     background-color: rgba(0, 0, 0, 0.4);
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.489);
+    text-align: center;
+    margin: 0 auto;
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
