@@ -34,9 +34,6 @@ section {
     font-family: 'Courier New', Courier, monospace;
     font-size: 3vw;
 }
-section > p {
-    padding-bottom: 2em;
-}
 
 section#intro {
     background-color: white;
@@ -48,11 +45,11 @@ section.imagem {
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.518);
     background-attachment: fixed;
-}
+    }
+
 
 section#img1 {
     background-image: url("https://todoconceptos.com/wp-content/uploads/2021/07/Vertebrados-destacada-1.jpg");
-    background-position: right center;
     background-size: 100% auto;
     background-repeat: no-repeat;
    
@@ -88,10 +85,13 @@ section#img6 {
 }
 
 section.imagem > p {
-    display: inline-block;
-    padding: 5px;
+    padding: 5px 0;
+    margin: 0px;
     background-color: rgba(0, 0, 0, 0.4);
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.489);
+    width: 100vw;
+    position: relative;
+    right: 1%;
 }
 
 footer {
